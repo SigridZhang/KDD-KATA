@@ -17,7 +17,45 @@ String Calculator Kata (via Roy Osherove)
     6. Numbers bigger than 1000 should be ignored, so adding 2 + 1001 = 2
     7. Delimiters can be of any length with the following format: “//[delimiter]\n” for example: “//[]\n12***3” should return 6
     8. Allow multiple delimiters like this: “//[delim1][delim2]\n” for example “//[][%]\n12%3” should return 6.
-    9. make sure you can also handle multiple delimiters with length longer than one char
+    9. make sure you can also handle multiple delimiters with length longer than one charTasks:
+    1. empty string
+        - input null, return 0
+        - input "", return 0
+    2. 1 numbers
+        - input "1", return 1
+        - input "0", return 0
+    3. 2 numbers
+        - input "0,1", return 1
+        - input "1,2", return 3
+    4. more than 2 numbers
+        - input "0,1,2", return 3
+        - input "10,20,30", return 60
+    5. numbers split by new lines
+        - input "1\n2", return 3
+        - input "1\n2\n3", return 6
+    6. numbers split by new lines and ,
+        - input "1\n2,3", return 6
+        - input "1,2\n3", return 6
+    7. numbers split by delimiters users specify
+        - input ";\n1;2", return 3
+    8. throw exception message when there is one numbers or more
+        - input "1,-2,3", return "negatives not allowed - -2"
+        - input "-1,2,-3", return "negatives not allowed - -1,-3"
+    9. ignore numbers which are bigger than 1000
+        - input "1001,1", return 1
+        - input "1000,1", return 1001
+        - input "1001,1,2", return 3
+    10. delimiters specified by users of any length with format: "//[delimiter]\n"
+        - input "//[***]\n1***2", return 3
+        - input "//[***]\n1***2***3", return 6
+    11. multiple delimiters with format: " //[delim1][delim2]\n" 
+        - input "//[*][%]\n1*2", return 3
+        - input "//[*][%]\n1*2%3", return 6
+    12. multiple delimiters with length longer than one char
+        - input "//[**][%%%]\n1**2", return 3 
+        - input "//[**][%%%]\n1**2%%%3", return 6     
+    
+
   
   
 
