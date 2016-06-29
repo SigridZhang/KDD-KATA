@@ -20,7 +20,7 @@ Tasks:
      - input 4, return "composite"
      - input 27, return 'composite"
   3. print 'composite' if number is composite but not even [5min][1min27]
-     - input 9, reurn "composite"
+     - input 9, return "composite"
      - input 25, return "composite"
   4. print number if it cannot meet neither of rule1 nor rule3 [3min][30s]
      - input 1, return "1"
