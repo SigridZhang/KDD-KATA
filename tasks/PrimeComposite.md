@@ -26,8 +26,9 @@ Tasks:
      - input 1, return "1"
      - input 4, return "4"
      - input 24, return "24"
-  5. print numbers from 1 to 100 according to above rules [5min]
+  5. print numbers from 1 to 100 according to above rules [5min][2min41s]
   
-  6. print numbers with specified from 1 to 100 according to above rules [5min]
-     - input 1, 10, return "1, prime, prime, 4, prime, 6, prime, 8, composite, 10"
+  6. print numbers with specified from 1 to 100 according to above rules [5min][1min38s]
+     - input 1, 10, return "1 prime prime 4 prime 6 prime 8 composite 10"
+     - input 0, 20, throw an exception "INVALID PARAMETER"
   
