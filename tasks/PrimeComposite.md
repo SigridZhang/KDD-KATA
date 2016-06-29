@@ -30,5 +30,5 @@ Tasks:
   
   6. print numbers with specified from 1 to 100 according to above rules [5min][1min38s]
      - input 1, 10, return "1 prime prime 4 prime 6 prime 8 composite 10"
-     - input 0, 20, throw an exception "INVALID PARAMETER"
+
   
